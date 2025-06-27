@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Cleaner-as-a-Service</title>
+  <link rel="stylesheet" href="a.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Data Cleaner <span>as a Service</span></h1>
+    <p class="subtext">Upload your messy CSV. We'll clean it serverlessly </p>
+
+    <form id="upload-form">
+      <label for="file-input" class="custom-file">
+        <i class="fas fa-file-csv"></i> Choose CSV File
+        <input type="file" id="file-input" accept=".csv" required hidden />
+      </label>
+
+      <input type="email" id="email-input" placeholder="📧 Enter your email" required />
+
+      <button type="submit"><i class="fas fa-upload"></i> Upload & Clean</button>
+    </form>
+
+    <div id="message"></div>
+  </div>
+
+  <script src="a.js"></script>
+</body>
+</html>
